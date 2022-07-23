@@ -66,6 +66,9 @@ body{
     font-size: 1.4rem;
     transform: translate(4rem);
 }
+input{
+    all: unset;
+}
 .email_input{
     outline: none;
     border: none;
