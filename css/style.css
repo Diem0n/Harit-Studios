@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+@font-face {
+    font-family: 'Qalkage';
+    src: url(../assets/fonts/Qalkage.otf);
+}
+:root{
+    --background-black : hsl(0, 4%, 5%);
+    --white:hsl(0, 0%, 100%);
+    --heading: hsl(0, 0%, 85%);
+    --paragraph: hsl(0, 5%, 65%);
+    --stroke:hsl(0, 0%, 28%);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image:url('../assets/vectors/Harit.svg') ;
+    overflow-x: hidden;
+    background-color: var(--background-black);
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 4vw;
+}
+ 
+.logo{
+    font-size: clamp(2rem , 3.2rem , 4rem);
+    color: var(--white);
+    font-weight: normal;
+    font-family: 'Bad Script';
+    text-transform: capitalize;
+    font-feature-settings: 'ordn' on, 'init' on, 'fina' on;
+}
+.headline_container{
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 4vw;
+}
+.headline{
+    color: rgba(255,255,255, 80%);
+    font-family: 'Qalkage';
+    font-style: normal;
+    font-weight: 100;
+    font-size: calc(100vw - 88vw );
+}
+.stroked{
+    color: var(--background-black);
+    -webkit-text-stroke: 1px var(--stroke);
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 3rem 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    transform: translate(4rem);
+}
+.email_input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 3rem;
+    border-bottom: 1px solid #cecece;
+    caret-color: var(--white);
+    color: var(--paragraph);
+    font-weight: 200;
+    
+}
+.type_submit{
+    background-color: transparent;
+    color: var(--paragraph);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cecece;
+    cursor: pointer;
+    font-weight: 200;
+    font-style: normal;
+}
+.about{
+
+    color: var(--paragraph);
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    gap: 2rem;
+    max-width: fit-content;
+    justify-content: center;
+    font-size: calc(.5vw + 1rem);
+
+    position: absolute;
+    bottom:10%;
+  
+
+
+    
+}
+.about_title{
+    font-weight: 400;
+}
+.about_description{
+    max-width: 46ch;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+
+
+@media  screen and (max-width:50em){
+    .headline{
+        font-size: calc(9vw + 4rem);
+    }
+}
